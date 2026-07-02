@@ -17,7 +17,6 @@ function CounterMetric({ end, suffix, label, sublabel }: MetricProps) {
       ([entry]) => {
         if (!entry.isIntersecting) return
         observer.disconnect()
-        let start = 0
         const duration = 1800
         const step = (timestamp: number, startTime: number) => {
           const progress = Math.min((timestamp - startTime) / duration, 1)
