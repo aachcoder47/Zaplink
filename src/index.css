@@ -1464,6 +1464,7 @@ body {
 
 @media (max-width: 900px) {
   .navbar__nav { display: none; }
+  #nav-cta { display: none; }
   .navbar__menu-btn { display: flex; }
   .services__grid { grid-template-columns: 1fr 1fr; }
   .about__inner { grid-template-columns: 1fr; gap: 3rem; }
@@ -1479,8 +1480,8 @@ body {
   .portfolio__grid { grid-template-columns: 1fr; }
   .project-card--featured { grid-column: span 1; }
   .testimonials__grid { grid-template-columns: 1fr; }
-  .team__grid { grid-template-columns: 1fr 1fr; }
-  .metrics__grid { grid-template-columns: 1fr 1fr; }
+  .team__grid { grid-template-columns: 1fr; }
+  .metrics__grid { grid-template-columns: 1fr; }
   .tech__grid { grid-template-columns: repeat(3, 1fr); }
   .hero__stats { flex-wrap: wrap; gap: 1.5rem; }
   .cta-form__row { grid-template-columns: 1fr; }
