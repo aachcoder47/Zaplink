@@ -10,7 +10,7 @@ const values = [
 ]
 
 const timeline = [
-  { year: '2012', event: 'Founded in Ahmedabad by a team of 5 engineers with a shared vision for digital excellence.' },
+  { year: '2012', event: 'Founded in Patna by a team of 5 engineers with a shared vision for digital excellence.' },
   { year: '2015', event: 'Reached 50 clients milestone. Expanded mobile development division with Flutter and React Native.' },
   { year: '2017', event: 'Opened offices in San Francisco and London. Grew team to 120+ specialists.' },
   { year: '2019', event: 'Launched enterprise division serving Fortune 500 companies. Won 3 design industry awards.' },

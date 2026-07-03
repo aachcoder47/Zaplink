@@ -2,8 +2,8 @@ import { useState } from 'react'
 
 const contactInfo = [
   { icon: '💬', label: 'WhatsApp', value: '+91 74620 85177', href: 'https://wa.me/917462085177' },
-  { icon: '📧', label: 'Email', value: 'hello@govintek.com', href: 'mailto:hello@govintek.com' },
-  { icon: '📍', label: 'Office', value: 'Ahmedabad, Gujarat, India', href: '#' },
+  { icon: '📧', label: 'Email', value: 'ritwikr850@gmail.com', href: 'mailto:ritwikr850@gmail.com' },
+  { icon: '📍', label: 'Office', value: 'Patna, Bihar, India', href: '#' },
   { icon: '🕐', label: 'Hours', value: 'Mon–Fri, 9am–7pm IST', href: '#' },
 ]
 
