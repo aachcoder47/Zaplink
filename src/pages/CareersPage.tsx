@@ -73,7 +73,7 @@ export default function CareersPage() {
             <div className="section-label"><span style={{ color: 'var(--clr-emerald)' }}>✨</span> Why Govintek</div>
             <h2 className="section-title">Perks & <span className="gradient-text">Benefits</span></h2>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.5rem' }}>
+          <div className="grid-cols-3" style={{ gap: '1.5rem' }}>
             {benefits.map((b, i) => (
               <div key={i} className="card-glass" style={{ padding: '2rem' }}>
                 <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>{b.icon}</div>

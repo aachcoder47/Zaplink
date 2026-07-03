@@ -133,7 +133,7 @@ export default function PortfolioPage() {
             ))}
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.75rem' }}>
+          <div className="grid-cols-3" style={{ gap: '1.75rem' }}>
             {filtered.map((p, i) => (
               <div
                 key={i}

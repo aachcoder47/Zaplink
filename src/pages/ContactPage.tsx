@@ -57,7 +57,7 @@ export default function ContactPage() {
       {/* Contact Grid */}
       <section style={{ padding: '5rem 0', background: '#fff' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.6fr', gap: '4rem', alignItems: 'start' }}>
+          <div className="grid-cols-1-1-6" style={{ gap: '4rem', alignItems: 'start' }}>
             {/* Left: Info */}
             <div>
               <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '2rem' }}>Contact Information</h2>
@@ -157,7 +157,7 @@ export default function ContactPage() {
       {/* FAQ quick stats strip */}
       <section style={{ padding: '3rem 0', background: '#fffbeb', borderTop: '1px solid rgba(245,158,11,0.1)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2rem', textAlign: 'center' }}>
+          <div className="grid-cols-3" style={{ gap: '2rem', textAlign: 'center' }}>
             {[
               { val: '24h', label: 'Guaranteed Response Time' },
               { val: 'Free', label: 'Initial Consultation' },

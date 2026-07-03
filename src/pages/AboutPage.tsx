@@ -31,7 +31,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section style={{ background: 'linear-gradient(135deg, #fffbeb 0%, #ffffff 60%)', padding: '5rem 0 4rem', borderBottom: '1px solid rgba(245,158,11,0.1)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }}>
+          <div className="grid-cols-1-1" style={{ gap: '4rem', alignItems: 'center' }}>
             <div>
               <div className="section-label" style={{ marginBottom: '1.5rem' }}>
                 <span style={{ color: 'var(--clr-emerald)' }}>i</span> Who We Are
@@ -47,7 +47,7 @@ export default function AboutPage() {
                 <Link to="/careers" className="btn btn-outline">Join Our Team</Link>
               </div>
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+            <div className="grid-cols-1-1" style={{ gap: '1rem' }}>
               {[
                 { val: '400+', label: 'Projects Delivered' },
                 { val: '150+', label: 'Team Members' },
@@ -93,7 +93,7 @@ export default function AboutPage() {
             <div className="section-label"><span style={{ color: 'var(--clr-emerald)' }}>❤️</span> Our Values</div>
             <h2 className="section-title">The Principles That <span className="gradient-text">Drive Us</span></h2>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.5rem' }}>
+          <div className="grid-cols-3" style={{ gap: '1.5rem' }}>
             {values.map((v, i) => (
               <div key={i} className="card-glass" style={{ padding: '2rem' }}>
                 <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>{v.icon}</div>

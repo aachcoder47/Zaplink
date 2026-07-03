@@ -119,7 +119,7 @@ export default function ServicesPage() {
               A transparent, collaborative process that keeps you informed and in control at every stage.
             </p>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '2rem' }}>
+          <div className="grid-cols-4" style={{ gap: '2rem' }}>
             {process.map((p, i) => (
               <div key={i} className="card-glass" style={{ padding: '2.5rem 2rem', textAlign: 'center', position: 'relative' }}>
                 <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>{p.icon}</div>

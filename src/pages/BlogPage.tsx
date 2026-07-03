@@ -105,7 +105,7 @@ export default function BlogPage() {
           <div className="section-label" style={{ marginBottom: '1.5rem' }}>
             <span style={{ color: 'var(--clr-emerald)' }}>⭐</span> Featured
           </div>
-          <div className="card-glass" style={{ padding: '3rem', display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '3rem', alignItems: 'center', borderTop: '4px solid #f59e0b' }}>
+          <div className="card-glass grid-cols-1-2" style={{ padding: '3rem', gap: '3rem', alignItems: 'center', borderTop: '4px solid #f59e0b' }}>
             <div style={{ fontSize: '8rem', textAlign: 'center', background: 'linear-gradient(135deg, #fffbeb, #fef3c7)', borderRadius: 'var(--radius-lg)', padding: '2rem', aspectRatio: '1', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               {featured.emoji}
             </div>
@@ -149,7 +149,7 @@ export default function BlogPage() {
             ))}
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.5rem' }}>
+          <div className="grid-cols-3" style={{ gap: '1.5rem' }}>
             {filtered.map((a, i) => (
               <article key={i} className="card-glass" style={{ padding: '2rem', display: 'flex', flexDirection: 'column' }} id={`article-${i}`}>
                 <div style={{ fontSize: '2.5rem', marginBottom: '1.25rem' }}>{a.emoji}</div>
