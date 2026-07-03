@@ -1551,44 +1551,40 @@ body {
 /* Responsive: Inner page grids */
 @media (max-width: 1100px) {
   /* About hero */
-  [style*="gridTemplateColumns: '1fr 1fr'"] {
+  [style*="grid-template-columns: 1fr 1fr"] {
     grid-template-columns: 1fr !important;
   }
 }
 
 @media (max-width: 900px) {
   /* Process steps */
-  [style*="gridTemplateColumns: 'repeat(4, 1fr)'"] {
+  [style*="grid-template-columns: repeat(4, 1fr)"] {
     grid-template-columns: repeat(2, 1fr) !important;
   }
   /* Contact grid */
-  [style*="gridTemplateColumns: '1fr 1.6fr'"] {
+  [style*="grid-template-columns: 1fr 1.6fr"] {
     grid-template-columns: 1fr !important;
   }
   /* About stats */
-  [style*="gridTemplateColumns: '1fr 2fr'"] {
+  [style*="grid-template-columns: 1fr 2fr"] {
     grid-template-columns: 1fr !important;
   }
   /* Blog/Portfolio 3-col */
-  [style*="gridTemplateColumns: 'repeat(3, 1fr)'"] {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
-  /* Benefits 3-col */
-  [style*="gridTemplateColumns: 'repeat(3, 1fr)'"] {
+  [style*="grid-template-columns: repeat(3, 1fr)"] {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 }
 
 @media (max-width: 640px) {
-  [style*="gridTemplateColumns: 'repeat(4, 1fr)'"],
-  [style*="gridTemplateColumns: 'repeat(3, 1fr)'"],
-  [style*="gridTemplateColumns: 'repeat(2, 1fr)'"],
-  [style*="gridTemplateColumns: '1fr 1fr'"],
-  [style*="gridTemplateColumns: '1fr 2fr'"],
-  [style*="gridTemplateColumns: '1fr 1.6fr'"] {
+  [style*="grid-template-columns: repeat(4, 1fr)"],
+  [style*="grid-template-columns: repeat(3, 1fr)"],
+  [style*="grid-template-columns: repeat(2, 1fr)"],
+  [style*="grid-template-columns: 1fr 1fr"],
+  [style*="grid-template-columns: 1fr 2fr"],
+  [style*="grid-template-columns: 1fr 1.6fr"] {
     grid-template-columns: 1fr !important;
   }
-  [style*="gridColumn: 'span 2'"] {
+  [style*="grid-column: span 2"] {
     grid-column: span 1 !important;
   }
 }
