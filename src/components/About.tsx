@@ -1,22 +1,22 @@
 export default function About() {
   const highlights = [
     {
-      title: 'Heterogeneous Integration',
-      desc: 'Merging CMOS logic, photonic communication, and MEMS sensors on a single silicon substrate for maximal efficiency.',
-      icon: '🧬',
-      color: 'rgba(52,211,153,0.12)',
+      title: 'Full-Stack Engineering',
+      desc: 'End-to-end development covering frontend interfaces, robust backend APIs, and reliable database structures.',
+      icon: '⚙️',
+      color: 'rgba(245,158,11,0.12)',
     },
     {
-      title: 'Neuromorphic Architecture',
-      desc: 'Designing event-driven analog compute circuits that mimic brain-like plasticity for ultra-low-power inference.',
-      icon: '🧠',
+      title: 'Agile Methodology',
+      desc: 'Iterative and flexible development cycles to ensure your product adapts to market needs and feedback.',
+      icon: '🔄',
       color: 'rgba(245,158,11,0.1)',
     },
     {
-      title: 'Kinematic Synthesis & SLAM',
-      desc: 'Developing sub-millimeter positioning precision and high-accuracy real-time autonomous mapping for mobile robotics.',
-      icon: '🛰',
-      color: 'rgba(45,212,191,0.1)',
+      title: 'Performance & Security',
+      desc: 'Optimization for lightning-fast load times and rigorous security protocols to protect user data.',
+      icon: '🛡️',
+      color: 'rgba(245,158,11,0.1)',
     },
   ]
 
@@ -43,10 +43,10 @@ export default function About() {
 
               {/* Floating tech badges */}
               <div className="about__chip-badge about__chip-badge--1" id="about-badge-1">
-                <span style={{ color: 'var(--clr-emerald)' }}>■</span> 4nm ASIC Design
+                <span style={{ color: 'var(--clr-emerald)' }}>■</span> Agile Workflows
               </div>
               <div className="about__chip-badge about__chip-badge--2" id="about-badge-2">
-                <span style={{ color: 'var(--clr-gold)' }}>■</span> ROS2 Navigation
+                <span style={{ color: 'var(--clr-gold)' }}>■</span> Top-Tier Talent
               </div>
             </div>
           </div>
@@ -54,17 +54,17 @@ export default function About() {
           {/* Right Column: Bio */}
           <div className="about__content">
             <div className="section-label">
-              <span style={{ color: 'var(--clr-emerald)' }}>G</span> Who We Are
+              <span style={{ color: 'var(--clr-emerald)' }}>i</span> Who We Are
             </div>
-            <h2 className="section-title">Bridging Silicon,{' '}
-              <span className="gradient-text">Cognition</span>,{' '}
-              and Kinetic Motion
+            <h2 className="section-title">Your Partner in{' '}
+              <span className="gradient-text">Digital</span>{' '}
+              Transformation
             </h2>
             <p className="section-subtitle" style={{ marginBottom: '1.5rem' }}>
-              Govintek was founded by a group of semiconductor architects and robotics researchers who foresaw the upcoming convergence of high-performance computing and embodied intelligence.
+              Govintek was built by a group of passionate technologists and designers dedicated to helping businesses succeed in the digital era.
             </p>
             <p className="section-subtitle" style={{ marginBottom: '2.5rem' }}>
-              Today we are a premier deep-technology design house — building prototype hardware, custom chip layouts, AI models optimized for edge processors, and advanced robotic solutions for aerospace, industry 4.0, and biomedical sectors.
+              Today we are a leading IT solutions provider — crafting beautiful web apps, intuitive mobile applications, and scalable backend services for startups and enterprises worldwide.
             </p>
 
             <div className="about__features">

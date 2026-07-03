@@ -1,9 +1,9 @@
 export default function Footer() {
   const links1 = [
-    { label: 'Semiconductors', href: '#services' },
-    { label: 'Edge AI', href: '#services' },
-    { label: 'Robotics Kinematics', href: '#services' },
-    { label: 'Case Studies', href: '#portfolio' },
+    { label: 'Web Applications', href: '#services' },
+    { label: 'Mobile Solutions', href: '#services' },
+    { label: 'UI/UX Design', href: '#services' },
+    { label: 'Digital Products', href: '#portfolio' },
   ]
   const links2 = [
     { label: 'Engineering Team', href: '#team' },
@@ -53,7 +53,7 @@ export default function Footer() {
               Govintek
             </a>
             <p>
-              Engineering physical intelligence at the convergence of custom silicon chips, neural models, and robotic motion.
+              Delivering premium digital experiences at the intersection of powerful engineering, seamless design, and business strategy.
             </p>
 
             {/* Social links */}

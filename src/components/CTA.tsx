@@ -15,7 +15,7 @@ export default function CTA() {
             Let's Build the <span className="gradient-text">Future</span>
           </h2>
           <p className="cta-box__sub">
-            Ready to design custom silicon, optimize neural models, or deploy automated kinematics? Reach out to our engineering directors.
+            Ready to design enterprise web applications, mobile apps, or next-gen digital experiences? Reach out to our technology directors.
           </p>
 
           {/* Direct contact links */}

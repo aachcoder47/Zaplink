@@ -1,17 +1,17 @@
 export default function Tech() {
   const techs = [
-    { name: 'RISC-V ISA', icon: '📟', category: 'Hardware' },
-    { name: 'ROS 2', icon: '🤖', category: 'Robotics' },
-    { name: 'PyTorch', icon: '🔥', category: 'Software' },
-    { name: 'C++ 20', icon: '⚙', category: 'Language' },
-    { name: 'TensorRT', icon: '🧠', category: 'Optimization' },
-    { name: 'SystemVerilog', icon: '💾', category: 'Hardware' },
-    { name: 'LiDAR Integration', icon: '🛰', category: 'Sensor' },
-    { name: 'Ouroboros', icon: '🌀', category: 'Protocol' },
-    { name: 'Nvidia Jetson', icon: '🔌', category: 'Edge Computing' },
-    { name: 'CUDA', icon: '☄', category: 'Compute' },
-    { name: 'Cadence Virtuoso', icon: '🔬', category: 'CAD' },
-    { name: 'Docker / ROS-Docker', icon: '🐳', category: 'DevOps' },
+    { name: 'React', icon: '⚛️', category: 'Frontend' },
+    { name: 'Next.js', icon: '▲', category: 'Framework' },
+    { name: 'Node.js', icon: '🟩', category: 'Backend' },
+    { name: 'TypeScript', icon: '📘', category: 'Language' },
+    { name: 'AWS', icon: '☁️', category: 'Cloud' },
+    { name: 'MongoDB', icon: '🍃', category: 'Database' },
+    { name: 'PostgreSQL', icon: '🐘', category: 'Database' },
+    { name: 'Tailwind CSS', icon: '🌊', category: 'Styling' },
+    { name: 'Figma', icon: '🎨', category: 'Design' },
+    { name: 'React Native', icon: '📱', category: 'Mobile' },
+    { name: 'GraphQL', icon: '🔗', category: 'API' },
+    { name: 'Docker', icon: '🐳', category: 'DevOps' },
   ]
 
   return (
@@ -21,9 +21,9 @@ export default function Tech() {
           <div className="section-label">
             <span style={{ color: 'var(--clr-emerald)' }}>■</span> Technology Stack
           </div>
-          <h2 className="section-title">Engineered with Precision</h2>
+          <h2 className="section-title">Modern Technologies</h2>
           <p className="section-subtitle" style={{ marginLeft: 'auto', marginRight: 'auto' }}>
-            We work with industry-standard toolsets and cutting-edge paradigms to deliver robust, high-performance physical computing systems.
+            We leverage industry-leading tools, frameworks, and modern technologies to deliver robust and scalable software solutions.
           </p>
         </div>
 

@@ -17,7 +17,7 @@ export default function Team() {
           </div>
           <h2 className="section-title">The Engineering Minds</h2>
           <p className="section-subtitle" style={{ marginLeft: 'auto', marginRight: 'auto' }}>
-            Our strength lies in our multidisciplinary expertise. We combine deep academic research with battle-tested industrial execution.
+            Our strength lies in our multidisciplinary expertise. We combine deep software engineering experience with agile execution.
           </p>
         </div>
 

@@ -39,7 +39,7 @@ export default function Hero() {
         if (p.y < 0 || p.y > canvas.height) p.vy *= -1
         ctx.beginPath()
         ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2)
-        ctx.fillStyle = `rgba(52,211,153,${p.alpha})`
+        ctx.fillStyle = `rgba(245,158,11,${p.alpha})`
         ctx.fill()
       })
       // draw connections
@@ -50,7 +50,7 @@ export default function Hero() {
             ctx.beginPath()
             ctx.moveTo(p.x, p.y)
             ctx.lineTo(q.x, q.y)
-            ctx.strokeStyle = `rgba(52,211,153,${0.07 * (1 - dist / 120)})`
+            ctx.strokeStyle = `rgba(245,158,11,${0.07 * (1 - dist / 120)})`
             ctx.lineWidth = 0.5
             ctx.stroke()
           }
@@ -98,19 +98,19 @@ export default function Hero() {
 
           {/* Title */}
           <h1 className="hero__title">
-            Engineering the{' '}
-            <span className="gradient-text">Intelligent</span>
+            Crafting the{' '}
+            <span className="gradient-text">Digital</span>
             <br />
-            Machines of <span className="gradient-text-gold">Tomorrow</span>
+            Experiences of <span className="gradient-text-gold">Tomorrow</span>
           </h1>
 
           {/* Description */}
           <p className="hero__description">
-            <strong style={{ color: 'var(--clr-emerald)', fontWeight: 600 }}>Govintek</strong> is a deep-tech agency at the frontier of{' '}
-            <strong style={{ color: 'var(--clr-emerald)', fontWeight: 600 }}>Semiconductors</strong>,{' '}
-            <strong style={{ color: 'var(--clr-gold)', fontWeight: 600 }}>Artificial Intelligence</strong>, and{' '}
-            <strong style={{ color: 'var(--clr-teal)', fontWeight: 600 }}>Robotics</strong>.
-            We build the hardware, intelligence, and machines that define tomorrow.
+            <strong style={{ color: 'var(--clr-emerald)', fontWeight: 600 }}>Govintek</strong> is a premier IT agency specializing in{' '}
+            <strong style={{ color: 'var(--clr-emerald)', fontWeight: 600 }}>Enterprise Web</strong>,{' '}
+            <strong style={{ color: 'var(--clr-gold)', fontWeight: 600 }}>Mobile Applications</strong>, and{' '}
+            <strong style={{ color: 'var(--clr-teal)', fontWeight: 600 }}>UI/UX Design</strong>.
+            We build scalable, high-performance digital solutions that drive business growth.
           </p>
 
           {/* CTA */}
@@ -181,7 +181,7 @@ function HeroVisual() {
         width: '480px',
         height: '480px',
         borderRadius: '50%',
-        border: '1px solid rgba(52,211,153,0.08)',
+        border: '1px solid rgba(245,158,11,0.08)',
         animation: 'spin 20s linear infinite',
       }} />
       {/* Middle ring */}
@@ -199,7 +199,7 @@ function HeroVisual() {
         width: '240px',
         height: '240px',
         borderRadius: '50%',
-        border: '1px dashed rgba(52,211,153,0.15)',
+        border: '1px dashed rgba(245,158,11,0.15)',
         animation: 'spin 10s linear infinite',
       }} />
 
@@ -207,8 +207,8 @@ function HeroVisual() {
       <div style={{
         width: '130px',
         height: '130px',
-        background: 'linear-gradient(135deg, rgba(52,211,153,0.14), rgba(245,158,11,0.1))',
-        border: '2px solid rgba(52,211,153,0.35)',
+        background: 'linear-gradient(135deg, rgba(245,158,11,0.14), rgba(245,158,11,0.1))',
+        border: '2px solid rgba(245,158,11,0.35)',
         borderRadius: '22px',
         display: 'flex',
         alignItems: 'center',
@@ -216,7 +216,7 @@ function HeroVisual() {
         fontSize: '2.75rem',
         position: 'relative',
         zIndex: 2,
-        boxShadow: '0 0 70px rgba(52,211,153,0.2), inset 0 0 30px rgba(52,211,153,0.06)',
+        boxShadow: '0 0 70px rgba(245,158,11,0.2), inset 0 0 30px rgba(245,158,11,0.06)',
         animation: 'core-pulse 3s ease-in-out infinite',
       }}>
         G
@@ -241,8 +241,8 @@ function HeroVisual() {
         position: 'absolute',
         top: '15%',
         right: '-30px',
-        background: 'rgba(7,21,16,0.95)',
-        border: '1px solid rgba(52,211,153,0.2)',
+        background: 'rgba(255,255,255,0.95)',
+        border: '1px solid rgba(245,158,11,0.2)',
         borderRadius: '12px',
         padding: '0.75rem 1rem',
         fontSize: '0.78rem',
@@ -254,13 +254,13 @@ function HeroVisual() {
         animation: 'badge-float 4s ease-in-out infinite',
         whiteSpace: 'nowrap',
       }}>
-        <span style={{ color: 'var(--clr-emerald)' }}>▲</span> 4nm ASIC Ready
+        <span style={{ color: 'var(--clr-emerald)' }}>▲</span> Next.js Ready
       </div>
       <div style={{
         position: 'absolute',
         bottom: '20%',
         left: '-20px',
-        background: 'rgba(7,21,16,0.95)',
+        background: 'rgba(255,255,255,0.95)',
         border: '1px solid rgba(245,158,11,0.2)',
         borderRadius: '12px',
         padding: '0.75rem 1rem',
@@ -274,7 +274,7 @@ function HeroVisual() {
         animationDelay: '-2s',
         whiteSpace: 'nowrap',
       }}>
-        <span style={{ color: 'var(--clr-gold)' }}>●</span> ROS2 Navigation
+        <span style={{ color: 'var(--clr-gold)' }}>●</span> iOS & Android
       </div>
 
       <style>{`

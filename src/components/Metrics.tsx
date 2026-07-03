@@ -43,10 +43,10 @@ function CounterMetric({ end, suffix, label, sublabel }: MetricProps) {
 
 export default function Metrics() {
   const metrics = [
-    { end: 150, suffix: '+', label: 'Projects Delivered', sublabel: 'across 12 industries' },
-    { end: 40, suffix: '+', label: 'Global Clients', sublabel: 'in 18 countries' },
+    { end: 400, suffix: '+', label: 'Projects Delivered', sublabel: 'across 20 industries' },
+    { end: 50, suffix: '+', label: 'Global Clients', sublabel: 'in 25 countries' },
     { end: 98, suffix: '%', label: 'Client Satisfaction', sublabel: 'avg. from post-project surveys' },
-    { end: 12, suffix: '', label: 'Patents Filed', sublabel: 'silicon & robotics IP' },
+    { end: 25, suffix: '+', label: 'Design Awards', sublabel: 'industry recognized excellence' },
   ]
 
   return (

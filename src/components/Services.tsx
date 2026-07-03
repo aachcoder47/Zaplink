@@ -2,21 +2,21 @@ export default function Services() {
   const services = [
     {
       no: '01',
-      icon: '💾',
-      title: 'Semiconductor Design',
-      desc: 'Custom silicon architectures, RISC-V co-processors, and advanced analog/mixed-signal design for edge-AI applications with sub-5nm node precision.',
-      tags: ['ASIC', 'FPGA', 'RISC-V', 'System-on-Chip'],
-      color: 'rgba(52,211,153,0.08)',
-      iconBg: 'rgba(52,211,153,0.1)',
-      iconBorder: 'rgba(52,211,153,0.25)',
-      line: 'linear-gradient(135deg, #34d399, #10b981)',
+      icon: '💻',
+      title: 'Enterprise Web Development',
+      desc: 'Scalable, secure, and responsive web applications built with modern frameworks to streamline your business operations and drive growth.',
+      tags: ['React', 'Next.js', 'Node.js', 'Cloud'],
+      color: 'rgba(245,158,11,0.08)',
+      iconBg: 'rgba(245,158,11,0.1)',
+      iconBorder: 'rgba(245,158,11,0.25)',
+      line: 'linear-gradient(135deg, #fbbf24, #f59e0b)',
     },
     {
       no: '02',
-      icon: '🧠',
-      title: 'Artificial Intelligence',
-      desc: 'Edge-native neural network optimization, tinyML pipelines, transformer fine-tuning, and ultra-low-latency computer vision for production environments.',
-      tags: ['PyTorch', 'TensorRT', 'Edge AI', 'Computer Vision'],
+      icon: '📱',
+      title: 'Mobile App Solutions',
+      desc: 'Native and cross-platform mobile experiences designed to engage users on iOS and Android with intuitive interfaces and robust performance.',
+      tags: ['iOS', 'Android', 'React Native', 'Flutter'],
       color: 'rgba(245,158,11,0.08)',
       iconBg: 'rgba(245,158,11,0.1)',
       iconBorder: 'rgba(245,158,11,0.25)',
@@ -24,14 +24,14 @@ export default function Services() {
     },
     {
       no: '03',
-      icon: '🤖',
-      title: 'Robotics Engineering',
-      desc: 'Autonomous mobile robots (AMR), kinematic control loops, ROS2 navigation stack, and multi-sensor fusion engines for industrial and research applications.',
-      tags: ['ROS2', 'LiDAR', 'SLAM', 'Control Systems'],
-      color: 'rgba(45,212,191,0.08)',
-      iconBg: 'rgba(45,212,191,0.1)',
-      iconBorder: 'rgba(45,212,191,0.25)',
-      line: 'linear-gradient(135deg, #2dd4bf, #0d9488)',
+      icon: '🎨',
+      title: 'UI/UX Design',
+      desc: 'User-centric design processes that translate complex requirements into beautiful, intuitive, and accessible digital interfaces.',
+      tags: ['Figma', 'Prototyping', 'User Research', 'Wireframing'],
+      color: 'rgba(245,158,11,0.08)',
+      iconBg: 'rgba(245,158,11,0.1)',
+      iconBorder: 'rgba(245,158,11,0.25)',
+      line: 'linear-gradient(135deg, #fbbf24, #d97706)',
     },
   ]
 
@@ -40,11 +40,11 @@ export default function Services() {
       <div className="container">
         <div className="services__header">
           <div className="section-label">
-            <span style={{ color: 'var(--clr-emerald)' }}>⚙</span> Core Expertise
+            <span style={{ color: 'var(--clr-emerald)' }}>⚡</span> Our Expertise
           </div>
-          <h2 className="section-title">Our <span className="gradient-text">Capability</span> Spectrum</h2>
+          <h2 className="section-title">Digital <span className="gradient-text">Excellence</span> Delivered</h2>
           <p className="section-subtitle">
-            We bridge the gap between complex hardware and cognitive AI. Our multidisciplinary engineering teams deliver end-to-end cyber-physical systems.
+            We transform visionary ideas into robust digital products. Our expert teams deliver end-to-end IT solutions for modern businesses.
           </p>
         </div>
 

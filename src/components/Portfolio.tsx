@@ -13,9 +13,9 @@ export default function Portfolio() {
             <div className="section-label">
               <span style={{ color: 'var(--clr-emerald)' }}>✦</span> Case Studies
             </div>
-            <h2 className="section-title">Selected Deployments</h2>
+            <h2 className="section-title">Selected Digital Products</h2>
             <p className="section-subtitle" style={{ marginBottom: 0 }}>
-              Watch our latest engineering showcases and project overviews.
+              Watch our latest software showcases and product overviews.
             </p>
           </div>
         </div>

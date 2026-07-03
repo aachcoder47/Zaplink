@@ -1,8 +1,11 @@
 import { useEffect, useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const location = useLocation()
+  const isHome = location.pathname === '/'
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 40)
@@ -10,10 +13,18 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const navLinks = [
+  const pages = [
+    { to: '/services', label: 'Services' },
+    { to: '/portfolio', label: 'Portfolio' },
+    { to: '/about', label: 'About' },
+    { to: '/blog', label: 'Blog' },
+    { to: '/careers', label: 'Careers' },
+  ]
+
+  const homeLinks = [
     { href: '#services', label: 'Services' },
     { href: '#about', label: 'About' },
-    { href: '#portfolio', label: 'Portfolio' },
+    { href: '#portfolio', label: 'Work' },
     { href: '#team', label: 'Team' },
     { href: '#contact', label: 'Contact' },
   ]
@@ -23,25 +34,37 @@ export default function Navbar() {
       <div className="container">
         <div className="navbar__inner">
           {/* Logo */}
-          <a href="#hero" className="navbar__logo" id="nav-logo">
+          <Link to="/" className="navbar__logo" id="nav-logo">
             <div className="navbar__logo-icon" aria-hidden="true">G</div>
             <span className="gradient-text">Govintek</span>
-          </a>
+          </Link>
 
           {/* Desktop Nav */}
           <ul className="navbar__nav" role="list">
-            {navLinks.map(link => (
-              <li key={link.href}>
-                <a href={link.href} id={`nav-${link.label.toLowerCase()}`}>{link.label}</a>
-              </li>
-            ))}
+            {isHome
+              ? homeLinks.map(link => (
+                  <li key={link.href}>
+                    <a href={link.href} id={`nav-${link.label.toLowerCase()}`}>{link.label}</a>
+                  </li>
+                ))
+              : pages.map(page => (
+                  <li key={page.to}>
+                    <Link
+                      to={page.to}
+                      id={`nav-${page.label.toLowerCase()}`}
+                      style={location.pathname === page.to ? { color: 'var(--clr-emerald)' } : {}}
+                    >
+                      {page.label}
+                    </Link>
+                  </li>
+                ))}
           </ul>
 
           {/* Actions */}
           <div className="navbar__actions">
-            <a href="#contact" className="btn btn-primary" id="nav-cta">
+            <Link to="/contact" className="btn btn-primary" id="nav-cta">
               Get in Touch ↗
-            </a>
+            </Link>
             <button
               className="navbar__menu-btn"
               onClick={() => setMenuOpen(!menuOpen)}
@@ -60,7 +83,7 @@ export default function Navbar() {
         {menuOpen && (
           <div
             style={{
-              background: 'rgba(2,11,6,0.97)',
+              background: 'rgba(255,255,255,0.97)',
               backdropFilter: 'blur(24px)',
               borderTop: '1px solid var(--clr-border)',
               padding: '1.5rem 0',
@@ -68,10 +91,10 @@ export default function Navbar() {
             }}
             id="mobile-menu"
           >
-            {navLinks.map(link => (
-              <a
-                key={link.href}
-                href={link.href}
+            {pages.map(page => (
+              <Link
+                key={page.to}
+                to={page.to}
                 style={{
                   display: 'block',
                   padding: '0.75rem 0',
@@ -83,21 +106,19 @@ export default function Navbar() {
                   transition: 'color 0.2s',
                 }}
                 onClick={() => setMenuOpen(false)}
-                id={`mobile-nav-${link.label.toLowerCase()}`}
+                id={`mobile-nav-${page.label.toLowerCase()}`}
               >
-                {link.label}
-              </a>
+                {page.label}
+              </Link>
             ))}
-            <a
-              href="https://wa.me/917462085177"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/contact"
               className="btn btn-primary"
               style={{ marginTop: '1.25rem', display: 'inline-flex' }}
               onClick={() => setMenuOpen(false)}
             >
-              💬 WhatsApp Us
-            </a>
+              💬 Get in Touch
+            </Link>
           </div>
         )}
       </div>
